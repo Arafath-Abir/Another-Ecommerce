@@ -68,6 +68,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.request',
+                'shop.context_processors.cart_item_count',
             ],
         },
     },
@@ -133,3 +134,18 @@ LOGOUT_REDIRECT_URL = ''
 # SOCIALACCOUNT_LOGIN_ON_GET = True
 # ACCOUNT_SESSION_REMEMBER = True
 # ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
+
+# SSL COMMERZE Payment setup
+SSL_COMMERZE_STORE_ID = 'malla69a7e7f039e2f'
+SSL_COMMERZE_STORE_PASSWORD = 'malla69a7e7f039e2f@ssl'
+SSL_COMMERZE_PAYMENT_URL = 'https://sandbox.sslcommerz.com/gwprocess/v4/api.php'  # Use sandbox URL for testing
+SSL_COMMERZE_VALIDATION_URL = 'https://sandbox.sslcommerz.com/validator/api/validationserverAPI.php'  # Use sandbox URL for testing
+
+# email set up
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'arafathabir07@gmail.com'
+EMAIL_HOST_PASSWORD = 'bbosvguxijnixyye' 
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'default from email'   
